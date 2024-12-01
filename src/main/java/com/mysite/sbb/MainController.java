@@ -5,12 +5,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class HelloController {
+public class MainController {
 	
-	@GetMapping("/jump")
+	@GetMapping("/sbb")
 	@ResponseBody
-	public String hello() {
-		return "점프 투 스프링 부트";
+	public String index() {
+		return "안녕하세요 sbb에 오신 것을 환영합니다.";
 	}
 
 }
+
+// return 값이 없으면 500 (Server error).
